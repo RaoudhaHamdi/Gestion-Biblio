@@ -142,11 +142,11 @@ class App extends Component {
             </ul>
           <Switch>
             <Route exact path="/">
-              {/* <BooksList
-                 books={this.state.books}
+              <BooksList
+                books={this.state.books}
                 handleClick={this.handleClick}
                 handleChange={this.handleChange}
-              />  */}
+              />  
             </Route>
             <Route  path="/addAuthor" component={Author}></Route>
             <Route  path="/addBook">
@@ -156,10 +156,6 @@ class App extends Component {
             {/* <BooksAuthor booAuth={this.state.books}/> */}
             {/* </Route> */}
           </Switch>
-          
-           <Pagination totalPages={this.state.totalPages} skip={this.state.skip} 
-           currPage={this.state.currPage} books={this.state.books}
-           />
           </div>
         </Router>
       </div>
